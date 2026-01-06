@@ -8,11 +8,11 @@ modelo = joblib.load("kmeans_model.pkl")
 escalador = joblib.load("scaler.pkl")
 
 CLUSTER_LABELS = {
-    0: "Bajo ingreso – Bajo gasto (Clientes cuidadosos)",
-    1: "Bajo ingreso – Alto gasto (Clientes impulsivos)",
-    2: "Alto ingreso – Alto gasto (Clientes premium)",
-    3: "Alto ingreso – Bajo gasto (Clientes conservadores)",
-    4: "Ingreso medio – Gasto medio (Clientes estándar)"
+    0: "Ingreso medio – Gasto medio (Clientes tradicionales)",
+    1: "Alto ingreso – Alto gasto (Clientes premium)",
+    2: "Bajo ingreso – Alto gasto (Clientes impulsivos)",
+    3: "Ingreso medio – Gasto medio-bajo (Clientes estándar)",
+    4: "Alto ingreso – Bajo gasto (Clientes conservadores)"
 }
 
 HTML_PAGE = """
